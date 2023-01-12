@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .contenedor-cartas{
@@ -19,7 +20,7 @@
     grid-column: span 5;
     text-align: center;
 }
-.contenedor-cartas p{
+.contenedor-cartas button{
     cursor: pointer;
 }
 
