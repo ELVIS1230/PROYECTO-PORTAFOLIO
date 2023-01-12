@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Tommy Normal";
+    src: url(../RECURSOS/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
 *{
     margin: 0;
     padding: 0;
@@ -19,11 +23,21 @@
 .titulo{
     grid-column: span 5;
     text-align: center;
+    color: white;
+    font-size: 25px;
+    font-family: "Tommy Normal";
 }
 .contenedor-cartas button{
     cursor: pointer;
 }
+.cartas{
+    transition: height 0.5s;
+}
+.cartas:hover{
+    height: 500px;
+    cursor: pointer;
 
+}
 
 .carta1 , .carta2,
 .carta3, .carta4,
