@@ -20,6 +20,9 @@
     background-color: #12203E;
     border-radius: 20px;
 }
+.contenedor-cartas button{
+    cursor: pointer;
+}
 .titulo{
     grid-column: span 5;
     text-align: center;
@@ -27,10 +30,12 @@
     font-size: 25px;
     font-family: "Tommy Normal";
 }
-.contenedor-cartas button{
-    cursor: pointer;
-}
 .cartas{
+    background-color: gray;
+    padding: 10px;
+    height: 300px;
+    border: solid 3px black;
+    border-radius: 20px;
     transition: height 0.5s;
 }
 .cartas:hover{
@@ -39,16 +44,6 @@
 
 }
 
-.carta1 , .carta2,
-.carta3, .carta4,
-.carta5{
-
-    background-color: gray;
-    padding: 10px;
-    height: 300px;
-    border: solid 3px black;
-    border-radius: 20px;
-}
 [data-content]{
         display: none;
 }
