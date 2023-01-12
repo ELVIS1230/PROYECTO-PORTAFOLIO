@@ -7,15 +7,21 @@
     width: 95%;
     max-width: 1100px;
     margin: 70px auto;
+    height: 600px;
     max-height: 600px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+
     background-color: #12203E;
     border-radius: 20px;
+}
+.titulo{
+    grid-column: span 5;
 }
 .contenedor-cartas p{
     cursor: pointer;
 }
+
 
 .carta1 , .carta2,
 .carta3, .carta4,
@@ -23,7 +29,7 @@
 
     background-color: gray;
     padding: 10px;
-    height: 500px;
+    height: 250px;
     border: solid 3px black;
     border-radius: 20px;
 }
