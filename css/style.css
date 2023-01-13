@@ -46,6 +46,10 @@
     height: 500px;
     cursor: pointer;
 }
+.cartas:hover button{
+    opacity: 1;
+    bottom: 25px;
+}
 .cartas button{
     width: 100px;
     height: 40px;
@@ -53,10 +57,6 @@
     border-radius: 20px;
     opacity: 0;
     transition: bottom 0.5s, opacity 0.5s;
-}
-.cartas:hover button{
-    opacity: 1;
-    bottom: 25px;
 }
 .img-personaje{
     width: 200px;
@@ -71,6 +71,6 @@
         display: none;
 }
 .active[data-content]{
-    display: flex;
+    display: block;
 }
 
