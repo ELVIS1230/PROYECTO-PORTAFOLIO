@@ -62,9 +62,35 @@
     width: 200px;
     height: 200px;
     background-color: red;
-    border: 3px solid white;
+    border-top: 8px solid white;
+    border-bottom: 8px solid white;
     border-radius: 50%;
     margin-top: 5px;
+    display: block;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+.desplazar{
+    opacity: 0;
+    transition: all .5s ease;
+    transform:  translateY(-45px);
+}
+.agrandar{
+    transform: scale(0);
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+.cartas:hover .agrandar{
+opacity: 1;
+transform: scale(1);
+}
+
+.cartas:hover .desplazar{
+transform: translateY(0px);
+opacity: 1;
+
 }
 
 [data-content]{
