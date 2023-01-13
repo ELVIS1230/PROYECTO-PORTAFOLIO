@@ -48,9 +48,7 @@
     opacity: 1;
     bottom: 25px;
 }*/
-.cartas button{
-   
-}
+
 .contenedor-cartas button{
     width: 100px;
     height: 40px;
@@ -74,6 +72,7 @@
     margin: 20px auto;
     transition: all 0.3s ease;
 }
+
 .desplazar{
     opacity: 0;
     transition: all .5s ease;
@@ -100,7 +99,8 @@ opacity: 1;
     padding: 5px;
     
 }
-.icon-social img{
+.icon-social i{
+    font-size: 50px;
     color: red;
 }
 [data-content]{
