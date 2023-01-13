@@ -21,9 +21,6 @@
     background-color: #12203E;
     border-radius: 20px;
 }
-.contenedor-cartas button{
-    cursor: pointer;
-}
 .titulo{
     grid-column: span 5;
     text-align: center;
@@ -39,24 +36,30 @@
     border-radius: 20px;
     justify-content: center;
     text-align: center;
-
+    
     transition: height 0.5s;
 }
 .cartas:hover{
     height: 500px;
     cursor: pointer;
 }
+/*
 .cartas:hover button{
     opacity: 1;
     bottom: 25px;
-}
+}*/
 .cartas button{
+   
+}
+.contenedor-cartas button{
     width: 100px;
     height: 40px;
     border: 3px solid black;
     border-radius: 20px;
     opacity: 0;
-    transition: bottom 0.5s, opacity 0.5s;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 .img-personaje{
     width: 200px;
@@ -90,9 +93,16 @@ transform: scale(1);
 .cartas:hover .desplazar{
 transform: translateY(0px);
 opacity: 1;
-
 }
 
+.info-personal{
+    font-size: 25px;
+    padding: 5px;
+    
+}
+.icon-social img{
+    color: red;
+}
 [data-content]{
         display: none;
 }
