@@ -11,7 +11,7 @@ targets.forEach(target => {
             c.classList.remove("active");
         })
 
-        const t= document.querySelector(target.dataset.target);
+        const t = document.querySelector(target.dataset.target);
         t.classList.add('active'); 
         console.log("elvis")
     })
