@@ -2,35 +2,38 @@
     font-family: "Tommy Normal";
     src: url(../RECURSOS/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Tommy Normal";
 }
-.contenedor-general{
+
+.contenedor-general {
 
     width: 95%;
     margin: 20px auto;
     max-width: 1150px;
     height: 600px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr) ;
-  
+    grid-template-columns: repeat(2, 1fr);
+
     grid-gap: 10px;
     align-items: center;
 }
-.navegacion{
+
+.navegacion {
     background-color: gray;
     border: black solid 5px;
     width: 60px;
     height: 350px;
     border-radius: 35px;
     display: grid;
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
-.contenedor-secundario{
+.contenedor-secundario {
     width: 1080px;
     max-width: 1080px;
     height: 600px;
@@ -40,60 +43,68 @@
     border-radius: 20px;
 }
 
-.contenedor-cartas{
-    
+.contenedor-cartas {
+
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 2px;
     width: 100%;
     height: 120px;
 }
-.cartas{
+
+.cartas {
     background-color: gray;
-    border: 3px solid black ;
+    border: 3px solid black;
     border-radius: 20px;
     width: 100%;
     height: 120px;
     position: relative;
+    z-index: 5;
 }
 
-.cartas:hover{
+.cartas:hover {
     height: 225px;
     transition: all .3s ease;
 }
-.nombre{
+
+.nombre {
     position: absolute;
     top: 110px;
     left: 25%;
 }
-.botones{
+
+.botones {
     position: absolute;
     top: 160px;
     left: 25%;
 }
-.redes{
+
+.redes {
     position: absolute;
     top: 38px;
     left: 53%;
-   
+
 }
+
 .redes i {
     font-size: 30px;
 }
-i:hover{
-   
-    text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34),0 0 30px rgb(136, 34, 34), 0 0 50px rgb(136, 34, 34) ;
+
+i:hover {
+    text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34), 0 0 30px rgb(136, 34, 34), 0 0 50px rgb(136, 34, 34);
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-.contenedor-contenido{
-    
+.contenedor-contenido {
+
     width: 100%;
     height: 480px;
 }
-img{
+
+img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -102,59 +113,130 @@ img{
     left: 25%;
     transition: all 0.3s ease;
 }
-.home{
+
+.home {
     background-color: peru;
     width: 50px;
     height: 50px;
 }
-button{
+
+button {
     width: 100px;
     height: 40px;
     border-radius: 20px;
     border: 3px solid black;
     cursor: pointer;
     transition: all .7s ease;
-   
+
 }
 
 
-.info{
-   
+.info {
+
     transition: all 0.3s ease;
-  
+
 }
-.desplazar{
+
+.desplazar {
 
     opacity: 0;
     transition: all .5s ease;
-    transform:  translatex(-50px);
+    transform: translatex(-50px);
 
 }
-.agrandar{
+
+.agrandar {
     transform: scale(0);
     opacity: 0;
     transition: all .4s ease;
 }
-.cartas:hover .agrandar{
+
+.cartas:hover .agrandar {
     opacity: 1;
     transform: scale(1);
-    }
-.cartas:hover img{
+}
+
+.cartas:hover img {
     transform: translateX(-50px);
 }
-.cartas:hover .desplazar{
+
+.cartas:hover .desplazar {
     transform: translatex(0px);
     opacity: 1;
     display: block;
-    }
+}
 
+.contenedor-home {
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-[data-content]{
+}
+
+.contenedor-home div {
+
+    text-align: center;
+    width: 900px;
+    font-size: 35px;
+    color: white;
+
+}
+.contenedor-nosotros{
+    width: 100%;
+    height: 100%;
+    border: 5px solid peru;
+    color: white;
+    padding: 10px 45px;
+    position: relative;
+    z-index: 0;
+}/*
+.contenedor-nosotros h1{
+    -webkit-text-stroke: 0.01px white;
+    color: transparent;
+}*/
+.contenedor-nosotros h1 span{
+    color: rgb(165, 30, 30);
+    text-shadow: 3px 3px 4px black;
+    -webkit-text-stroke: 0.1 white;
+}
+
+.contenedor-nosotros .parrafo-nosotros{
+    border: 5px solid pink;
+    margin: 20px 0px;
+    width: 520px;
+    text-align: justify;
+}
+.contenedor-nosotros .lengujes-aprendidos{
+    position: absolute;
+    left: 700px;
+    top: 15px;
+    width: 350px;
+    border: 3px solid green;    
+    justify-content: space-between;
+}
+.contenedor-nosotros .lengujes-aprendidos .css{
+    position: absolute;
+    top: 40px;
+    left: 220px;
+}
+.contenedor-nosotros .lengujes-aprendidos .javascript{
+    position: absolute;
+    left: 60px;
+    text-align: center;
+   
+}
+.contenedor-nosotros .lengujes-aprendidos i{
+    font-size: 100px;
+}
+[data-content] {
     display: none;
-    background-color: red;
-    padding: 10px;
+
     height: 100%;
 }
-.active[data-content]{
-display: block;
+
+.active[data-content] {
+    display: block;
 }
