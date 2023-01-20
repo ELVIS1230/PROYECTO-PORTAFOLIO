@@ -30,9 +30,15 @@
     height: 350px;
     border-radius: 35px;
     display: grid;
+    align-items: center;
+    justify-items: center;
     grid-template-rows: repeat(4, 1fr);
 }
-
+.navegacion i{
+    font-size: 40px;
+    
+    
+}
 .contenedor-secundario {
     width: 1080px;
     max-width: 1080px;
@@ -114,11 +120,7 @@ img {
     transition: all 0.3s ease;
 }
 
-.home {
-    background-color: peru;
-    width: 50px;
-    height: 50px;
-}
+
 
 button {
     width: 100px;
@@ -204,7 +206,7 @@ button {
 }
 
 .contenedor-nosotros .parrafo-nosotros{
-    border: 5px solid pink;
+    
     margin: 20px 0px;
     width: 520px;
     text-align: justify;
@@ -214,7 +216,7 @@ button {
     left: 700px;
     top: 15px;
     width: 350px;
-    border: 3px solid green;    
+    
     justify-content: space-between;
 }
 .contenedor-nosotros .lengujes-aprendidos .css{
