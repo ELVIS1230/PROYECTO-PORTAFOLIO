@@ -242,3 +242,10 @@ button {
 .active[data-content] {
     display: block;
 }
+.contenedor-proyectos {
+    width: 100%;
+}
+.contenedor-proyectos .table-scratch {
+    grid-template-columns: 2,1fr;
+    
+}
