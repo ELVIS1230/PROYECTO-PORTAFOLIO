@@ -242,12 +242,30 @@ button {
 .active[data-content] {
     display: block;
 }
+#proyectos {
+    width: 100%;
+    overflow-y: scroll;
+}
+#proyectos::-webkit-scrollbar {
+    width: 5px;
+}
+#proyectos::-webkit-scrollbar-track {
+    background: transparent;
+    
+}
+#proyectos::-webkit-scrollbar-thumb {
+    background: transparent; 
+    border-radius: 100px;
+}
+/* scrool transparente, scroll horizontal arreglar*/
 .contenedor-proyectos {
     width: 100%;
-    margin: 1%;
-    overflow: hidden;
-}
 
+}
+.contenedor-proyectos iframe {
+    width: 285;
+    height: 202;
+}
 .contenedor-proyectos .title-proyectos{
     color: white;
     padding: 2%;
@@ -263,7 +281,7 @@ button {
     grid-gap: 40px;
     margin: 30px;
     margin-top: 10px;
-    margin-left: 45px;
+    margin-left: 8%;
 }
 .table-scratch .scratch {
     border: 2px solid rgb(148, 39, 124);
@@ -271,4 +289,8 @@ button {
     width: 100%;
     height: 100%;
     
+}
+.scratch span {
+    color: white;
+    text-transform: uppercase;
 }
