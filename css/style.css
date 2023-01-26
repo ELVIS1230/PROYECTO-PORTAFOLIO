@@ -244,8 +244,14 @@ button {
 }
 .contenedor-proyectos {
     width: 100%;
+    margin: 1%;
+}
+.contenedor-proyectos .title-proyectos{
+    color: white;
+    padding: 2%;
+    padding-left: 5%;
 }
 .contenedor-proyectos .table-scratch {
     grid-template-columns: 2,1fr;
-    
+    display: flex;
 }
