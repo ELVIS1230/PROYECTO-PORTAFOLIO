@@ -245,13 +245,30 @@ button {
 .contenedor-proyectos {
     width: 100%;
     margin: 1%;
+    overflow: hidden;
 }
+
 .contenedor-proyectos .title-proyectos{
     color: white;
     padding: 2%;
     padding-left: 5%;
 }
+
 .contenedor-proyectos .table-scratch {
-    grid-template-columns: 2,1fr;
-    display: flex;
+    border: 2px solid rgb(0, 175, 29);
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+    margin: 30px;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+.table-scratch .scratch {
+    border: 2px solid rgb(148, 39, 124);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
 }
