@@ -294,3 +294,15 @@ button {
     color: white;
     text-transform: uppercase;
 }
+.para{
+    position: relative;
+    left: 10px;
+    width: 45%;height: 30%;
+}
+.E{
+    text-align: center;
+}
+.boto a{
+    text-decoration: none;
+    font-size: 30px;
+}
