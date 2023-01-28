@@ -2,7 +2,9 @@
     font-family: "Tommy Normal";
     src: url(../RECURSOS/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
 }
-
+body{
+    background: #282c2f;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +20,13 @@
     height: 600px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     grid-gap: 10px;
     align-items: center;
 }
 
 .navegacion {
     background-color: gray;
-    border: black solid 5px;
+    border: solid 2px white;
     width: 60px;
     height: 350px;
     border-radius: 35px;
@@ -47,6 +48,8 @@
     grid-template-rows: repeat(2, 1fr);
     background-color: #12203E;
     border-radius: 20px;
+    
+    border: solid 2px rgb(136, 136, 136);
 }
 
 .contenedor-cartas {
@@ -97,7 +100,9 @@
 }
 
 i:hover {
-    text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34), 0 0 30px rgb(136, 34, 34), 0 0 50px rgb(136, 34, 34);
+    text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34), 
+    0 0 30px rgb(136, 34, 34), 
+    0 0 50px rgb(136, 34, 34);
 }
 
 a {
