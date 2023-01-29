@@ -443,8 +443,9 @@ button {
     padding: 20px;
 }
 .contenedor-educacion .educacion1{
-    margin: 10px 0 0 10px;
-    border: 2px solid red;
+    margin: 0px 0 0 10px;
+    border: none;
+    border-left: 2px solid #45f3ff3d;
     padding: 10px 0 10px 13px;
     font-weight: 100;
 }
@@ -457,17 +458,33 @@ button {
 }
 .contenedor-educacion .educacion ul li::before{
     content: "";
-    width: 15px;
-    height: 15px;
-    
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     position: absolute;
-    background-image: url("../RECURSOS/imagenes/circle_FILL0_wght400_GRAD0_opsz48.png");
-    filter: saturate(-100%);
+    background-color: #1c1c1c;
+   border:solid 2px red ;
+   
     background-size: cover;
     background-position: center;
     left: 2px;
-    transform: translateX(-30px);
+    transform: translateX(-21px);
+    
+}
+.contenedor-educacion .educacion ul li::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;;
+    background-color: transparent;
+   border:solid 5px blue ;
+   border-color: rgba(255, 0, 0, 0.267);
+    
+    background-size: cover;
+    bottom: 96px;
+    transform: translateX(-24px);
+    
     
 }
 li::marker{
@@ -489,8 +506,8 @@ li::marker{
 }
 .contenedor-habilidades-blandas{
     border: 2px solid green;
-  
-    
+    grid-row-start: 3 ;
+    padding: 15px 8px;
 }
 .contenedor-habilidades-duras{
     border: 2px solid white;
