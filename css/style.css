@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 @font-face {
     font-family: "Tommy Normal";
     src: url(../RECURSOS/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
@@ -148,6 +150,13 @@ body{
     height: 120px;
     position: relative;
     z-index: 5;
+    
+}
+.cartas h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    letter-spacing: 0.1rem;
+    color: #45f3ff;
 }
 .carta1{
     border-top-left-radius: 10px;
@@ -156,11 +165,13 @@ body{
     border-top-right-radius: 10px;
 }
 
+
 .cartas:hover {
     height: 225px;
     transition: all .3s ease;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px ;
+    border-color: red;
 }
 
 .nombre {
@@ -173,6 +184,7 @@ body{
     position: absolute;
     top: 160px;
     left: 25%;
+
 }
 
 .redes {
@@ -184,12 +196,18 @@ body{
 
 .redes i {
     font-size: 30px;
+    color: white;
 }
 
 i:hover {
     text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34), 
     0 0 30px rgb(136, 34, 34), 
     0 0 50px rgb(136, 34, 34);
+    color: red;
+}
+.redes .blue:hover{
+    color: #45f3ff;
+    text-shadow: 0 0 5px #45f3ff;
 }
 
 a {
@@ -218,9 +236,11 @@ button {
     width: 100px;
     height: 40px;
     border-radius: 20px;
-    border: 3px solid black;
+    background: #45f3ff;
+     border: solid 3px #1c1c1c;
     cursor: pointer;
     transition: all .7s ease;
+    font-weight: 700;
 
 }
 
@@ -278,6 +298,14 @@ button {
     cursor: pointer;
     color:#45f3ff ;
 }
+.navegacion .home span:hover{
+    color: red;
+    text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34);
+}
+.navegacion .contacto span:hover{
+    color: red;
+    text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34);
+}
 
 .contenedor-home div {
 
@@ -285,12 +313,17 @@ button {
     width: 900px;
     font-size: 35px;
     color: white;
-
+    letter-spacing: 0.1em;
+    
+}
+.contenedor-home div h3{
+    letter-spacing: 0;
+    color: #45f3ff;
 }
 .contenedor-nosotros{
     width: 100%;
     height: 100%;
-    border: 5px solid peru;
+    
     color: white;
     padding: 10px 45px;
     position: relative;
@@ -415,6 +448,30 @@ button {
     grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
 }
+.contenedor-elvis{
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.contenedor-nombre{
+    border: 2px solid peru;
+}
+.contenedor-acerca-de-mi{
+    border: 2px solid pink;
+}
+.contenedor-educacion{
+    border: 2px solid aqua;
+}
+.contenedor-habilidades-blandas{
+    border: 2px solid green;
+}
+.contenedor-habilidades-duras{
+    border: 2px solid white;
+}
+.contenedor-contantos {
+    border: 2px solid yellow;
+}
 #personaje4 {
     background-color: #6580b9;
 }
@@ -425,10 +482,7 @@ button {
     width: 100%;
     height: 100%;
 }
-.educacion{
-    border: 2px solid red;
 
-}
 .educacion hr {
     width: 50%;
 }
