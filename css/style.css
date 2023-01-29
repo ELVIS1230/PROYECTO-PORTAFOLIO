@@ -369,10 +369,8 @@ button {
 }
 [data-content] {
     display: none;
-
     height: 100%;
 }
-
 .active[data-content] {
     display: block;
 }
