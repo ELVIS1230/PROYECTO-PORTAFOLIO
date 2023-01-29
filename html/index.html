@@ -1,292 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../RECURSOS/imagenes/lobo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" defer></script>-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Portafolio Team</title>
     <script src="../main/main.js" defer></script>
 </head>
 
 <body>
+    <dialog id="ventana">
+        <div class="ventana-secundaria">
+            <p id="contenedor-frases">hola</p>
+            <button id="cerrar-modal">CERRAR</button>
+        </div>
+    </dialog>
     <div class="contenedor-general">
-        <div class="contenedor-secundario">
-            <div class="contenedor-cartas">
-                <div class="carta1 , cartas">
-                    <div class="imagen">
-                        <img src="../RECURSOS/imagenes/ASTA.jpg">
+        <div class="contenedor-general-secundario">
+            <div class="contenedor-secundario">
+                <div class="contenedor-cartas">
+                    <div class="carta1 , cartas">
+                        <div class="imagen">
+                            <img src="../RECURSOS/imagenes/ASTA.jpg">
+                        </div>
+                        <div class="nombre , desplazar , info">
+                            <h2>ELVIS</h2>
+                        </div>
+                        <div class="redes , info , desplazar">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin-in , blue"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="botones , info">
+                            <button data-target="#personaje1" class="agrandar">SOBRE MI</button>
+                        </div>
                     </div>
-                    <div class="nombre , desplazar , info">
-                        <h1>Elvis</h1>
+                    <div class="carta2 , cartas">
+                        <div class="imagen">
+                            <img src="../RECURSOS/imagenes/ASTA.jpg">
+                        </div>
+                        <div class="nombre , desplazar , info">
+                            <h2>GENESIS</h2>
+                        </div>
+                        <div class="redes , info , desplazar">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin-in , blue"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="botones , info">
+                            <button data-target="#personaje2" class="agrandar">SOBRE MI</button>
+                        </div>
                     </div>
-                    <div class="redes , info , desplazar">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <i class="fa-brands fa-facebook"></i>
+
+                    <div class="carta3 , cartas">
+                        <div class="imagen">
+                            <img src="../RECURSOS/imagenes/ASTA.jpg">
+                        </div>
+                        <div class="nombre , desplazar , info">
+                            <h2>WILSON</h2>
+                        </div>
+                        <div class="redes , info , desplazar">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin-in , blue"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="botones , info">
+                            <button data-target="#personaje3" class="agrandar">SOBRE MI</button>
+                        </div>
                     </div>
-                    <div class="botones , info">
-                        <button data-target="#personaje1" class="agrandar">SOBRE MI</button>
+
+                    <div class="carta4 , cartas">
+                        <div class="imagen">
+                            <img src="../RECURSOS/imagenes/ASTA.jpg">
+                        </div>
+                        <div class="nombre , desplazar , info">
+                            <h2>ERIKA</h2>
+                        </div>
+                        <div class="redes , info , desplazar">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin-in , blue"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="botones , info">
+                            <button data-target="#personaje4" class="agrandar">SOBRE MI</button>
+                        </div>
+                    </div>
+
+                    <div class="carta5 , cartas">
+                        <div class="imagen">
+                            <img src="../RECURSOS/imagenes/alstreid.png">
+                        </div>
+                        <div class="nombre , desplazar , info">
+                            <h2>ALEX</h2>
+                        </div>
+                        <div class="redes , info , desplazar">
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin-in , blue"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="botones , info">
+                            <button data-target="#personaje5" class="agrandar">SOBRE MI</button>
+                        </div>
+
                     </div>
                 </div>
-                <div class="carta2 , cartas">
-                    <div class="imagen">
-                        <img src="../RECURSOS/imagenes/ASTA.jpg">
-                    </div>
-                    <div class="nombre , desplazar , info">
-                        <h1>Genesis</h1>
-                    </div>
-                    <div class="redes , info , desplazar">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="botones , info">
-                        <button data-target="#personaje2" class="agrandar">SOBRE MI</button>
-                    </div>
-                </div>
 
-                <div class="carta3 , cartas">
-                    <div class="imagen">
-                        <img src="../RECURSOS/imagenes/ASTA.jpg">
-                    </div>
-                    <div class="nombre , desplazar , info">
-                        <h1>Wasis</h1>
-                    </div>
-                    <div class="redes , info , desplazar">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="botones , info">
-                        <button data-target="#personaje3" class="agrandar">SOBRE MI</button>
-                    </div>
-                </div>
-
-                <div class="carta4 , cartas">
-                    <div class="imagen">
-                        <img src="../RECURSOS/imagenes/ASTA.jpg">
-                    </div>
-                    <div class="nombre , desplazar , info">
-                        <h1>Erika</h1>
-                    </div>
-                    <div class="redes , info , desplazar">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="botones , info">
-                        <button data-target="#personaje4" class="agrandar">SOBRE MI</button>
-                    </div>
-                </div>
-
-                <div class="carta5 , cartas">
-                    <div class="imagen">
-                        <img src="../RECURSOS/imagenes/alstreid.png">
-                    </div>
-                    <div class="nombre , desplazar , info">
-                        <h1>Alex</h1>
-                    </div>
-                    <div class="redes , info , desplazar">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                    </div>
-                    <div class="botones , info">
-                        <button data-target="#personaje5" class="agrandar">SOBRE MI</button>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="contenedor-contenido">
-
-                <div data-content id="personaje1">
-                    <div class="contenedor-elvis">
-                        <h1>ELVIS GOMEZ</h1>
-                        <h3>Acerca de mí</h3>
-                        <p>Soy una persona que lo que le gusta de forma apasionada y brinda esa sensación
-                            a los demas el gusto por la informatica, la programación y la tecnologia, se sembro a
-                            temprana
-                            edad con peliculas series y personas con un alto conocimiento en diferentes ramas de este.
-                        </p>
-                        <h3>Educación</h3>
-                        <div class="educacion">
-                            <div class="educacion1">
-                                <p>2020</p>
-                                <p class="titulo-edu">Bachiller técnico informatica</p>
-                                <p>En este me introduje en conceptos basicos de programación
-                                    arquitectura computacional, redes y base de datos
+                <div class="contenedor-contenido">
+                    <div data-content id="personaje1">
+                        <div class="contenedor-elvis">
+                            <div class="contenedor-nombre">
+                                <h1>ELVIS GOMEZ</h1>
+                            </div>
+                            <div class="contenedor-acerca-de-mi">
+                                <h2>Acerca de mí</h2>
+                                <p>Soy una persona que hace lo que le gusta de forma apasionada y brinda esa
+                                    sensación
+                                    a los demas, tengo el gusto por la informatica, la programación y la tecnologia.
+                                    Toda
+                                    esta pasion se sembro a temprana edad con peliculas, series y personas con un alto
+                                    conocimirto que
+                                    supieron transmitirlo y generando una curiosidad inmensa en este mundo
                                 </p>
                             </div>
-                            <h3>Habilidades blandas</h3>
-                            <div class="habilidades">
-                                <p>Administración del tiempo eficaz</p>
-                                <p>Adaptación al cambio</p>
-                                <p>Proactividad</p>
-                                <p>Introspeccion</p>
+                            <div class="contenedor-educacion">
+                                <h2>Educación</h2>
+                                <div class="educacion">
+                                    <ul>
+                                        <div class="educacion1">
+                                            <li>
+                                                <p class="año">Cursando</p>
+                                                <h4 class="titulo-edu">Tecnologia en Desarrollo de software</h4>
+                                                <p>En este modulo me transmitieron el conocimiento sobre desarrollo Web
+                                                </p>
+                                            </li>
+                                        </div>
+                                        <div class="educacion1">
+                                            <li>
+                                                <p class="año">2020</p>
+                                                <h4 class="titulo-edu">Bachiller técnico informatica</h4>
+                                                <p>En este me introduje en conceptos basicos de programación
+                                                    arquitectura computacional, redes y base de datos
+                                                </p>
+                                            </li>
+                                        </div>
+                                        <div class="educacion1">
+                                            <li>
+                                                <p class="año">2020</p>
+                                                <h4 class="titulo-edu">Introduccion a Ciberseguridad - Udla/Cisco</h4>
+                                                <p>En este modulo logre adquirir conocimiento sobre los ataques
+                                                    ciberneticos
+                                                    como protegerse y las tecnicas que se utilizan.
+                                                </p>
+                                            </li>
+                                        </div>
+                                        <div class="educacion1">
+                                            <li>
+                                                <p class="año">2020</p>
+                                                <h4 class="titulo-edu">Introduccion a linux - Udla/Cisco</h4>
+                                                <p>En esta seccion aprendi sobre el software de codigo abierto, sus
+                                                    ficheros,
+                                                    a realizar un crud con la linea de comandos
+                                                </p>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
                             </div>
-                            <p>Habilidades de desarrollo</p>
-                            <div class="desarrollo">
-                                <p>JAVASCRIPT --- BASICO</p>
-                                <P>HTML/CSS --- INTERMEDIO</P>
+                            <div class="contenedor-habilidades-blandas">
+                                <h2>Habilidades blandas</h2>
+                                <div class="habilidades">
+                                    <p>Administración del tiempo eficaz</p>
+                                    <p>Adaptación al cambio</p>
+                                    <p>Proactividad</p>
+                                    <p>Introspeccion</p>
+                                </div>
                             </div>
+                            <div class="contenedor-habilidades-duras">
+                                <h2>Conocimientos</h2>
+                                <div class="desarrollo">
+                                    <div class="header-porcentaje">
+                                        <span>0%</span>
+                                        <span>50%</span>
+                                        <span>100%</span>
+                                    </div>
+                                    <div class="skills">
+                                        <p>Javascript</p>
+                                        <div class="barra , porcentaje1"></div>
+                                    </div>
+                                    <div class="skills">
+                                        <P>Html/Css</P>
+                                        <div class="barra , porcentaje2"> </div>
+                                    </div>
+                                    <div class="skills">
+                                        <P>MySQL</P>
+                                        <div class="barra , porcentaje3"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                                <div class="contenedor-contantos">
+                                    <h1>CORREO ELECTRONICO</h1>
+                                </div>
+                            -->
                         </div>
                     </div>
-                </div>
-                <div data-content id="personaje2">
-                    <h1>Soy Genesis</h1>
-                </div>
-                <div data-content id="personaje3">
-                    <h1>Soy Wasis</h1>
-                </div>
-                <div data-content id="personaje4">
-                    <div class="contenedor-erika">
-                        <div class="E"><img class="para" src="../RECURSOS/imagenes/pajaro.jpg">
-                            <h1>Erika Achote</h1>
-                            <h2>Desarrollador de software</h2>
-                           <br> <div class="boto">
-                            <section>
-                            <a href="#" class="fa-brands fa-facebook"></a>
-                            <a href="#" class="fa-brands fa-github"></a>
-                            <a href="#" class="fa-brands fa-instagram"></a>
-                            </section>
+
+                    <div data-content id="personaje2">
+                        <h1>Soy Genesis</h1>
+                    </div>
+                    <div data-content id="personaje3">
+                        <h1>Soy Wasis</h1>
+                    </div>
+                    <div data-content id="personaje4">
+                        <div class="contenedor-erika">
+                            <div class="E"><img class="para" src="../RECURSOS/imagenes/pajaro.jpg">
+                                <h1>Erika Achote</h1>
+                                <h2>Desarrollador de software</h2>
+                                <br>
+                                <div class="boto">
+                                    <section>
+                                        <a href="#" class="fa-brands fa-facebook"></a>
+                                        <a href="#" class="fa-brands fa-github"></a>
+                                        <a href="#" class="fa-brands fa-instagram"></a>
+                                    </section>
+                                </div>
                             </div>
-                        </div>
-                        <div class="datos-erika">
-                            <h3>Acerca de mí</h3>
-                            <p>Soy una persona que lo que le gusta de forma apasionada y brinda esa sensación
-                                a los demas el gusto por la informatica, la programación y la tecnologia, se sembro a
-                                temprana
-                                edad con peliculas series y personas con un alto conocimiento en diferentes ramas de
-                                este.
-                            </p>
-                             <div class="educacion1">
-                                <h3>Educación</h3>
-                                <p>2020</p>
-                                <p class="titulo-edu">Bachiller técnico informatica</p>
-                                <p>En este me introduje en conceptos basicos de programación
-                                    arquitectura computacional, redes y base de datos
+                            <div class="datos-erika">
+                                <h3>Acerca de mí</h3>
+                                <p>Soy una persona que lo que le gusta de forma apasionada y brinda esa sensación
+                                    a los demas el gusto por la informatica, la programación y la tecnologia, se sembro
+                                    a
+                                    temprana
+                                    edad con peliculas series y personas con un alto conocimiento en diferentes ramas de
+                                    este.
                                 </p>
-                            </div>
-
-                            <div class="habilidades">
-                                <h3>Habilidades blandas</h3>
-                                <p>Administración del tiempo eficaz</p>
-                                <p>Adaptación al cambio</p>
-                                <p>Proactividad</p>
-                                <p>Introspeccion</p>
-                            </div>
-                        </div>
-
-                        <div class="educacion">
-                           
-                            
-                            <p>Habilidades de desarrollo</p>
-                            <div class="desarrollo">
-                                <p>JAVASCRIPT --- BASICO</p>
-                                <P>HTML/CSS --- INTERMEDIO</P>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div data-content id="personaje5">
-                    <h1>Soy Alex</h1>
-                </div>
-                <div data-content id="home" class="active , estilo">
-                    <div class="contenedor-home">
-                        <div>
-                            <h1>LOS DESCENDIENTES</h1>
-                            <h3>Desarrolladores Web</h3>
-                        </div>
-                    </div>
-                </div>
-                <div data-content id="nosotros">
-                    <div class="contenedor-nosotros">
-                        <div>
-                            <h1>SOBRE <span> NOSOTROS </span></h1>
-                        </div>
-                        <div>
-                            <p class="parrafo-nosotros">Somos un grupo de esudiantes de primer semestre en la carrera de
-                                software
-                                con una vision de siempre mejorar en cada paso que damos con la finalidad de
-                                convertinos en programadores con una gran capacidad de brindar una solución
-                                ante cualquier problematica.
-                            </p>
-                            <h1>¿Qué nos <span> unio</span>?</h1>
-                            <p class="parrafo-nosotros">
-                                Todos los integrantes que formamos el tema "DESCENDIENTES" tenian caminos muy
-                                distintos sin embargo habia una cosa en común. Incursionar en el mundo de la
-                                programación compartiendo esto decidimos para apoyarnos mutuamente para cumplir
-                                nuestros objetivos
-                            </p>
-                            <div class="lengujes-aprendidos">
-                                <h1>Lenguajes <span>aprendidos</span></h1>
-                                <div class="html">
-                                    <i class="fa-brands fa-html5"></i>
-                                    <h1>HTML</h1>
+                                <div class="educacion1">
+                                    <h3>Educación</h3>
+                                    <p>2020</p>
+                                    <p class="titulo-edu">Bachiller técnico informatica</p>
+                                    <p>En este me introduje en conceptos basicos de programación
+                                        arquitectura computacional, redes y base de datos
+                                    </p>
                                 </div>
-                                <div class="css">
-                                    <i class="fa-brands fa-css3-alt"></i>
-                                    <h1>CSS</h1>
+                                <div class="habilidades">
+                                    <h3>Habilidades blandas</h3>
+                                    <p>Administración del tiempo eficaz</p>
+                                    <p>Adaptación al cambio</p>
+                                    <p>Proactividad</p>
+                                    <p>Introspeccion</p>
                                 </div>
-                                <div class="javascript">
-                                    <i class="fa-brands fa-js"></i>
-                                    <h1>JAVASCRIPT</h1>
-                                </div>
+                            </div>
 
+                            <div class="educacion">
+
+
+                                <p>Habilidades de desarrollo</p>
+                                <div class="desarrollo">
+                                    <p>JAVASCRIPT --- BASICO</p>
+                                    <P>HTML/CSS --- INTERMEDIO</P>
+                                </div>
                             </div>
                         </div>
 
                     </div>
-                </div>
-                <div data-content id="proyectos">
-                    <div class="contenedor-proyectos">
-                        <div class="title-proyectos">
-                            <h1>PROYECTOS</h1>
-                        </div>
-                        <div class="table-scratch">
-                            <div class="scratch">
-                                
-                                <iframe src="https://scratch.mit.edu/projects/774286233/embed" allowtransparency="true"
-                                    width="335" height="252" frameborder="0" scrolling="no" allowfullscreen>
-                                </iframe>
-                                <div><span>space-x</span></div>
-                            </div>
-                            <div class="scratch">
-                                <iframe src="https://scratch.mit.edu/projects/779195320/embed" allowtransparency="true"
-                                    width="335" height="252" frameborder="0" scrolling="no" allowfullscreen>
-                                </iframe>
-                                <div><span>laberinto</span></div>
-                            </div>
-                            <div class="scratch">
-                                <iframe src="https://scratch.mit.edu/projects/779195320/embed" allowtransparency="true"
-                                    width="335" height="252" frameborder="0" scrolling="no" allowfullscreen>
-                                </iframe>
-                                <div><span>otra cosa</span></div>
-                            </div>
-                            <div class="scratch">
-
+                    <div data-content id="personaje5">
+                        <h1>Soy Alex</h1>
+                    </div>
+                    <div data-content id="home" class="active , estilo">
+                        <div class="contenedor-home">
+                            <div>
+                                <h1>LOS DESCENDIENTES</h1>
+                                <h3>Desarrolladores Web</h3>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div data-content id="contactos">
-                    <h1>CONTACTANOS</h1>
+                    <div data-content id="nosotros">
+                        <div class="contenedor-nosotros">
+                            <div>
+                                <h1>SOBRE <span> NOSOTROS </span></h1>
+                            </div>
+                            <div>
+                                <p class="parrafo-nosotros">Somos un grupo de esudiantes de primer semestre en la
+                                    carrera de
+                                    software
+                                    con una vision de siempre mejorar en cada paso que damos con la finalidad de
+                                    convertinos en programadores con una gran capacidad de brindar una solución
+                                    ante cualquier problematica.
+                                </p>
+                                <h1>¿Qué nos <span> unio</span>?</h1>
+                                <p class="parrafo-nosotros">
+                                    Todos los integrantes que formamos el tema "DESCENDIENTES" tenian caminos muy
+                                    distintos sin embargo habia una cosa en común. Incursionar en el mundo de la
+                                    programación compartiendo esto decidimos para apoyarnos mutuamente para cumplir
+                                    nuestros objetivos
+                                </p>
+                                <div class="lengujes-aprendidos">
+                                    <h1>Lenguajes <span>aprendidos</span></h1>
+                                    <div class="html">
+                                        <i class="fa-brands fa-html5"></i>
+                                        <h1>HTML</h1>
+                                    </div>
+                                    <div class="css">
+                                        <i class="fa-brands fa-css3-alt"></i>
+                                        <h1>CSS</h1>
+                                    </div>
+                                    <div class="javascript">
+                                        <i class="fa-brands fa-js"></i>
+                                        <h1>JAVASCRIPT</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-content id="proyectos">
+                        <div class="contenedor-proyectos">
+                            <div class="title-proyectos">
+                                <h1>PROYECTOS</h1>
+                            </div>
+                            <div class="table-scratch">
+                                <div class="scratch1">
+                                    <img src="../RECURSOS/imagenes/calculadora.png" alt="">
+                                    <div class="descripcion">
+                                        <div class="titulo , bajar">
+                                            <h3>Calculadora</h3>
+                                            <span>Html / Css / Javascript</span>
+                                        </div>
+                                     <a href="../calculadora/calculadora.html" target="_blank"><button  class="subir">VER MÁS</button></a>   
+                                    </div>
+                                </div>
+                                <div class="scratch">
+                                    <iframe src="https://scratch.mit.edu/projects/779195320/embed"
+                                        allowtransparency="true" width="335" height="252" frameborder="0" scrolling="no"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <div><span>laberinto</span></div>
+                                </div>
+                                <div class="scratch">
+                                    <iframe src="https://scratch.mit.edu/projects/779195320/embed"
+                                        allowtransparency="true" width="335" height="252" frameborder="0" scrolling="no"
+                                        allowfullscreen>
+                                    </iframe>
+                                    <div><span>otra cosa</span></div>
+                                </div>
+                                <div class="scratch">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-content id="contactos">
+                        <h1>CONTACTANOS</h1>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="navegacion">
-            <div data-target="#home" class="home"><i class="fa-solid fa-house"></i></div>
-            <div data-target="#nosotros" class="nosotros"><i class="fa-solid fa-user-astronaut"></i></div>
-            <div data-target="#proyectos" class="proyectos"><i class="fa-solid fa-suitcase"></i></div>
-            <div data-target="#contactos" class="contacto"><i class="fa-regular fa-comment"></i></div>
+        <div class="contenedor-general-navegacion">
+            <div class="navegacion">
+                <div data-target="#home" class="home"><span class="material-symbols-outlined">
+                        home
+                    </span></div>
+                <div data-target="#nosotros" class="nosotros"><span class="material-symbols-outlined">
+                        person
+                    </span></div>
+                <div data-target="#proyectos" class="proyectos"><span class="material-symbols-outlined">
+                        work
+                    </span></div>
+                <div data-target="#contactos" class="contacto"><span class="material-symbols-outlined">
+                        send
+                    </span></div>
+            </div>
         </div>
     </div>
+    </div>
+
+
 </body>
 
 </html>
