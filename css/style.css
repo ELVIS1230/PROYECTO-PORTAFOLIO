@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,400;500;600;700;800&display=swap');
 
 @font-face {
     font-family: "Tommy Normal";
@@ -509,9 +509,28 @@ li::marker{
     grid-row-start: 3 ;
     padding: 15px 8px;
 }
+.contenedor-habilidades-blandas h3{
+    margin-bottom: 15px;
+    color: #45f3ff;
+}
+.contenedor-habilidades-blandas .habilidades p{
+    display: inline-block;
+    border: 3px solid #23242a;
+    background:rgb(172, 26, 26) ;
+    padding: 8px;
+    border-radius:5px;
+    margin-bottom: 4px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: 200;
+
+}
 .contenedor-habilidades-duras{
     border: 2px solid white;
-    
+    padding: 15px 8px;
+}
+.contenedor-habilidades-duras h3{
+    margin-bottom: 15px;
+    color: #45f3ff;
 }
 .contenedor-contantos {
     border: 2px solid yellow;
