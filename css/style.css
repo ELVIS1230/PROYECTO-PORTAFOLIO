@@ -3,7 +3,7 @@
     src: url(../RECURSOS/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
 }
 body{
-    background: #282c2f;
+    background:#23242a ;
 }
 * {
     margin: 0;
@@ -23,52 +23,141 @@ body{
     grid-gap: 10px;
     align-items: center;
 }
-
+.contenedor-general-navegacion{
+    position: relative;
+    width: 64px;
+    height: 354px;
+    background: #1c1c1c;
+    border-radius:8px ;
+    overflow: hidden;
+}
+.contenedor-general-navegacion::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 65px;
+    height: 355px;
+    background: linear-gradient(0deg, transparent, #45f3ff,
+            #45f3ff);
+    transform-origin: bottom right;
+    animation: animacion 6s linear infinite;
+}
+.contenedor-general-navegacion::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 65px;
+    height: 355px;
+    background: linear-gradient(0deg, transparent, #45f3ff,
+            #45f3ff);
+    transform-origin: bottom right;
+    animation: animacion 6s linear infinite;
+    animation-delay: -3s;
+}
 .navegacion {
-    background-color: gray;
-    border: solid 2px white;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background-color: #28292d; 
     width: 60px;
     height: 350px;
-    border-radius: 35px;
+    border-radius: 8px;
     display: grid;
     align-items: center;
     justify-items: center;
     grid-template-rows: repeat(4, 1fr);
+    inset: 2px;
+    z-index: 10;
 }
+
 .navegacion i{
     font-size: 40px;
     
     
 }
+.contenedor-general-secundario{
+    position: relative;
+    width: 1085px;
+    height: 605px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+}
 .contenedor-secundario {
+    position: absolute;
     width: 1080px;
     max-width: 1080px;
     height: 600px;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    background-color: #12203E;
-    border-radius: 20px;
+    background:#28292d ;
+    border-radius: 10px;
     
-    border: solid 2px rgb(136, 136, 136);
+    inset: 2px;
+   z-index: 1;
+}
+.contenedor-general-secundario::before{
+    content: '';
+    position:absolute;
+    top:-50%;
+    left: -50%;
+    width: 1080px;
+      height: 600px;
+      background: linear-gradient(0deg, transparent, #45f3ff,
+      #45f3ff);
+    transform-origin: bottom right;
+    animation: animacion 6s linear infinite;
+}
+.contenedor-general-secundario::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 1080px;
+    height: 600px;
+    background: linear-gradient(0deg, transparent, #45f3ff,
+            #45f3ff);
+    transform-origin: bottom right;
+    animation: animacion 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animacion {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .contenedor-cartas {
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 2px;
+    grid-gap: 1px;
     width: 100%;
     height: 120px;
 }
 
 .cartas {
-    background-color: gray;
-    border: 3px solid black;
-    border-radius: 20px;
+    background-color: #28292d;
+    border: 2px solid #78787a;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0px;
+    
     width: 100%;
     height: 120px;
     position: relative;
     z-index: 5;
+}
+.carta1{
+    border-top-left-radius: 10px;
+}
+.carta5{
+    border-top-right-radius: 10px;
 }
 
 .cartas:hover {
@@ -181,6 +270,10 @@ button {
     justify-content: center;
     align-items: center;
 
+}
+.navegacion span{
+    font-size: 50px;
+    color: rgb(184, 182, 182);
 }
 
 .contenedor-home div {
