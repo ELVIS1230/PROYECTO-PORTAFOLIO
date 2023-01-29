@@ -13,9 +13,69 @@ body{
     box-sizing: border-box;
     font-family: "Tommy Normal";
 }
+#ventana{
+    width: 480px;
+    height: 205px;
+    margin: 220px auto;
+    background: #1c1c1c;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+#ventana::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 475px;
+    height: 200px;
+    background: linear-gradient(0deg, transparent, red,
+            #45f3ff);
+    transform-origin: bottom right;
+    animation: animacion 6s linear infinite;
+}
+#ventana::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 475px;
+    height: 200px;
+    background: linear-gradient(0deg, transparent, #45f3ff,
+            #45f3ff);
+    transform-origin: bottom right;
+    animation: animacion 6s linear infinite;
+    animation-delay: -3s;
+}
+.ventana-secundaria{
+    padding: 20px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 470px;
+    height: 195.4px;
+    background: #1c1c1c;
+    border-radius:8px ;
+    inset: 2px;
+    z-index: 2;
 
+}
+#ventana::backdrop{
+    background-color: rgba(121, 119, 119, 0.274);
+}
+#ventana p{
+    width: 420px;
+    height: 100px ;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+.ventana-secundaria button{
+    position: absolute;
+    left: 175px;
+    top: 140px;
+}
 .contenedor-general {
-
     width: 95%;
     margin: 20px auto;
     max-width: 1150px;
