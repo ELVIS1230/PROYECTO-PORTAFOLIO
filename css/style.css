@@ -263,7 +263,7 @@ a {
     width: 100%;
     height: 480px;
 }
-img {
+.contenedor-cartas img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -287,7 +287,6 @@ button {
     opacity: 0;
     transition: all .5s ease;
     transform: translatex(-50px);
-
 }
 .agrandar {
     transform: scale(0);
@@ -430,10 +429,72 @@ button {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 40px;
-    margin: 30px;
+    column-gap: 40px;
+    row-gap: 10px;
     margin-top: 10px;
-    margin-left: 8%;
+    margin-left: 70px;
+}
+.contenedor-proyectos .table-scratch .scratch1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    border: 1px solid red;
+    transition: all 0.2s ease-in-out;
+    width: 449px;
+    height: 300px;
+}
+.contenedor-proyectos .table-scratch .scratch1 .titulo{
+    transform: translateY(-200px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.scratch1 .titulo h3{
+    color: black ;
+}
+.scratch1 .titulo span{
+color: red;
+}
+.scratch1:hover{
+    background: white;
+}
+.contenedor-proyectos .table-scratch .scratch1 img{
+    width: 450px;
+    object-fit: contain;
+    transition: all 0.2s ease-in-out;
+}
+.scratch1:hover .descripcion .bajar{
+    opacity: 1;
+    transform: translateY(-125px);
+}
+.scratch1 .descripcion button{
+    transform: translateY(10px);
+    opacity: 0;
+    background: white;
+    border: 1px solid red;
+    border-radius: 0;
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+.scratch1:hover .descripcion .subir{
+    transform: translateY(-60px);
+    opacity: 1;
+}
+.scratch1:hover img{
+    background-color: white;
+    transform: scale(0.9);
+    opacity: 0;
+
+}
+.table-scratch .scratch1 .descripcion{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 90%;
+    padding: 15px;
+    text-align: center;
 }
 .table-scratch .scratch {
     border: 2px solid rgb(148, 39, 124);
