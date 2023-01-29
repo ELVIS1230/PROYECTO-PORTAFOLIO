@@ -73,11 +73,8 @@ body{
     inset: 2px;
     z-index: 10;
 }
-
 .navegacion i{
-    font-size: 40px;
-    
-    
+    font-size: 40px;   
 }
 .contenedor-general-secundario{
     position: relative;
@@ -95,8 +92,7 @@ body{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background:#28292d ;
-    border-radius: 10px;
-    
+    border-radius: 10px; 
     inset: 2px;
    z-index: 1;
 }
@@ -133,24 +129,20 @@ body{
         transform: rotate(360deg);
     }
 }
-
 .contenedor-cartas {
-
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1px;
     width: 100%;
     height: 120px;
 }
-
 .cartas {
     background-color: #28292d;
     border: 2px solid #78787a;
     width: 100%;
     height: 120px;
     position: relative;
-    z-index: 5;
-    
+    z-index: 5;  
 }
 .cartas h2{
     font-family: 'Poppins', sans-serif;
@@ -164,8 +156,6 @@ body{
 .carta5{
     border-top-right-radius: 10px;
 }
-
-
 .cartas:hover {
     height: 225px;
     transition: all .3s ease;
@@ -173,32 +163,28 @@ body{
     border-bottom-right-radius:10px ;
     border-color: red;
 }
-
 .nombre {
     position: absolute;
     top: 110px;
     left: 25%;
+    transition: all 0.3s ease;
 }
-
 .botones {
     position: absolute;
     top: 160px;
     left: 25%;
 
 }
-
 .redes {
     position: absolute;
     top: 38px;
     left: 53%;
 
 }
-
 .redes i {
     font-size: 30px;
     color: white;
 }
-
 i:hover {
     text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34), 
     0 0 30px rgb(136, 34, 34), 
@@ -209,17 +195,14 @@ i:hover {
     color: #45f3ff;
     text-shadow: 0 0 5px #45f3ff;
 }
-
 a {
     text-decoration: none;
 }
-
 .contenedor-contenido {
 
     width: 100%;
     height: 480px;
 }
-
 img {
     width: 100px;
     height: 100px;
@@ -229,9 +212,6 @@ img {
     left: 25%;
     transition: all 0.3s ease;
 }
-
-
-
 button {
     width: 100px;
     height: 40px;
@@ -243,51 +223,35 @@ button {
     font-weight: 700;
 
 }
-
-
-.info {
-
-    transition: all 0.3s ease;
-
-}
-
 .desplazar {
-
     opacity: 0;
     transition: all .5s ease;
     transform: translatex(-50px);
 
 }
-
 .agrandar {
     transform: scale(0);
     opacity: 0;
     transition: all .4s ease;
 }
-
 .cartas:hover .agrandar {
     opacity: 1;
     transform: scale(1);
 }
-
 .cartas:hover img {
     transform: translateX(-50px);
 }
-
 .cartas:hover .desplazar {
     transform: translatex(0px);
     opacity: 1;
     display: block;
 }
-
 .contenedor-home {
     width: 100%;
-    height: 100%;
-    
+    height: 100%; 
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .navegacion span{
     font-size: 50px;
@@ -306,15 +270,12 @@ button {
     color: red;
     text-shadow: 0 0 5px rgb(136, 34, 34), 0 0 15px rgb(136, 34, 34);
 }
-
 .contenedor-home div {
-
     text-align: center;
     width: 900px;
     font-size: 35px;
     color: white;
     letter-spacing: 0.1em;
-    
 }
 .contenedor-home div h3{
     letter-spacing: 0;
@@ -323,7 +284,6 @@ button {
 .contenedor-nosotros{
     width: 100%;
     height: 100%;
-    
     color: white;
     padding: 10px 45px;
     position: relative;
@@ -450,25 +410,96 @@ button {
     padding: 20px 30px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+     
+    overflow-y: scroll;
+    height: 100%;
+    align-items: start;
+    color: white;
 }
 .contenedor-nombre{
     border: 2px solid peru;
+    height: 100%;
+    color: white;
+}
+.contenedor-acerca-de-mi h3{
+    color: #45f3ff;
+}
+.contenedor-acerca-de-mi p{
+    margin-top: 10px;
 }
 .contenedor-acerca-de-mi{
     border: 2px solid pink;
+        grid-row-start:2 ;
+        height: 220px;
+        padding: 10px 8px;
+        text-align: justify;
+   
 }
 .contenedor-educacion{
     border: 2px solid aqua;
+    height: 145%;
+    grid-row: span 3 ;
+    padding: 20px;
+}
+.contenedor-educacion .educacion1{
+    margin: 10px 0 0 10px;
+    border: 2px solid red;
+    padding: 10px 0 10px 13px;
+    font-weight: 100;
+}
+.contenedor-educacion .educacion ul{
+    list-style: none;
+}
+.contenedor-educacion .educacion ul li{
+    position: relative;
+    padding-left: 0px;
+}
+.contenedor-educacion .educacion ul li::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 50%;
+    position: absolute;
+    background-image: url("../RECURSOS/imagenes/circle_FILL0_wght400_GRAD0_opsz48.png");
+    filter: saturate(-100%);
+    background-size: cover;
+    background-position: center;
+    left: 2px;
+    transform: translateX(-30px);
+    
+}
+li::marker{
+    color: white;
+    
+    font-size: 22px;
+   border: 100px solid red;
+    
+}
+.contenedor-educacion .educacion1:hover{
+    background-color: rgba(74,85,98,0.3);
+}
+.contenedor-educacion .educacion1 .año{
+    color: #8f8f8f;
+    font-size: 12px;
+}
+.titulo-edu{
+    padding: 10px 0;
 }
 .contenedor-habilidades-blandas{
     border: 2px solid green;
+  
+    
 }
 .contenedor-habilidades-duras{
     border: 2px solid white;
+    
 }
 .contenedor-contantos {
     border: 2px solid yellow;
+    grid-column-start:1 ;
+    grid-row-start:3 ;
 }
 #personaje4 {
     background-color: #6580b9;
