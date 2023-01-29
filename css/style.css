@@ -38,7 +38,7 @@ body{
     left: -50%;
     width: 65px;
     height: 355px;
-    background: linear-gradient(0deg, transparent, #45f3ff,
+    background: linear-gradient(0deg, transparent, red,
             #45f3ff);
     transform-origin: bottom right;
     animation: animacion 6s linear infinite;
@@ -105,7 +105,7 @@ body{
     left: -50%;
     width: 1080px;
       height: 600px;
-      background: linear-gradient(0deg, transparent, #45f3ff,
+      background: linear-gradient(0deg, transparent, red,
       #45f3ff);
     transform-origin: bottom right;
     animation: animacion 6s linear infinite;
@@ -144,10 +144,6 @@ body{
 .cartas {
     background-color: #28292d;
     border: 2px solid #78787a;
-    border-radius: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0px;
-    
     width: 100%;
     height: 120px;
     position: relative;
@@ -163,6 +159,8 @@ body{
 .cartas:hover {
     height: 225px;
     transition: all .3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px ;
 }
 
 .nombre {
@@ -274,6 +272,11 @@ button {
 .navegacion span{
     font-size: 50px;
     color: rgb(184, 182, 182);
+}
+.navegacion span:hover{
+    text-shadow: 0 0 5px #45f3ff;
+    cursor: pointer;
+    color:#45f3ff ;
 }
 
 .contenedor-home div {
