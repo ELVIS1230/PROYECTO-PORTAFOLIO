@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800&display=swap');
 
 @font-face {
     font-family: "Tommy Normal";
@@ -411,46 +411,70 @@ button {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(4,1fr);
-     
     overflow-y: scroll;
     height: 100%;
     align-items: start;
     color: white;
 }
+.contenedor-elvis::-webkit-scrollbar{
+    width: 10px;
+}
+.contenedor-elvis::-webkit-scrollbar-thumb{
+    background: #78787a67;
+    border-radius: 25px;
+    
+
+}
 .contenedor-nombre{
-    border: 2px solid peru;
+   
     height: 100%;
     color: white;
+    font-size: 25px;
 }
-.contenedor-acerca-de-mi h3{
+.contenedor-acerca-de-mi h2{
     color: #45f3ff;
 }
 .contenedor-acerca-de-mi p{
     margin-top: 10px;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-weight: 200;
 }
 .contenedor-acerca-de-mi{
-    border: 2px solid pink;
+        margin-top: 20px;
         grid-row-start:2 ;
-        height: 220px;
+        height: 180px;
         padding: 10px 8px;
         text-align: justify;
    
 }
 .contenedor-educacion{
-    border: 2px solid aqua;
+    
     height: 145%;
     grid-row: span 3 ;
     padding: 20px;
+}
+.contenedor-educacion h2{
+    color: #45f3ff;
+    margin-left: 8px;
+    margin-bottom: 15px;
+
 }
 .contenedor-educacion .educacion1{
     margin: 0px 0 0 10px;
     border: none;
     border-left: 2px solid #45f3ff3d;
-    padding: 10px 0 10px 13px;
+    padding: 8px 0 10px 13px;
     font-weight: 100;
 }
 .contenedor-educacion .educacion ul{
     list-style: none;
+}
+
+.contenedor-educacion .educacion ul li p{
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 14px;
 }
 .contenedor-educacion .educacion ul li{
     position: relative;
@@ -464,12 +488,10 @@ button {
     position: absolute;
     background-color: #1c1c1c;
    border:solid 2px red ;
-   
     background-size: cover;
     background-position: center;
-    left: 2px;
-    transform: translateX(-21px);
-    
+    transform: translateX(-19px);
+    bottom: 86px;
 }
 .contenedor-educacion .educacion ul li::after{
     content: "";
@@ -482,18 +504,12 @@ button {
    border-color: rgba(255, 0, 0, 0.267);
     
     background-size: cover;
-    bottom: 96px;
+    bottom: 81px;
     transform: translateX(-24px);
     
     
 }
-li::marker{
-    color: white;
-    
-    font-size: 22px;
-   border: 100px solid red;
-    
-}
+
 .contenedor-educacion .educacion1:hover{
     background-color: rgba(74,85,98,0.3);
 }
@@ -505,11 +521,11 @@ li::marker{
     padding: 10px 0;
 }
 .contenedor-habilidades-blandas{
-    border: 2px solid green;
+   
     grid-row-start: 3 ;
     padding: 15px 8px;
 }
-.contenedor-habilidades-blandas h3{
+.contenedor-habilidades-blandas h2{
     margin-bottom: 15px;
     color: #45f3ff;
 }
@@ -518,19 +534,67 @@ li::marker{
     border: 3px solid #23242a;
     background:rgb(172, 26, 26) ;
     padding: 8px;
-    border-radius:5px;
+    border-radius:10px;
     margin-bottom: 4px;
    font-family: 'Poppins', sans-serif;
    font-weight: 200;
 
 }
 .contenedor-habilidades-duras{
-    border: 2px solid white;
     padding: 15px 8px;
 }
-.contenedor-habilidades-duras h3{
+.header-porcentaje{
+    display: flex;
+    justify-content: space-between;
+    width: 175px;
+    margin-left: 180px;
+}
+.header-porcentaje span{
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+
+}
+.contenedor-habilidades-duras h2{
     margin-bottom: 15px;
     color: #45f3ff;
+}
+
+.contenedor-habilidades-duras .desarrollo .skills{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+.contenedor-habilidades-duras .desarrollo .barra{
+    width: 175px;
+    height: 11px;
+    border: 1px solid #45f3ff;
+    padding: 1px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.contenedor-habilidades-duras .desarrollo .barra::after{
+    content: "";
+    width: 150px;
+    height: 7px;
+    border-radius: 10px;
+    background: #45f3ff;
+    position: absolute;
+}
+ .porcentaje1::after{
+  transform: translateX(-45px);
+  
+}
+ .porcentaje2::after{
+  transform: translateX(-10px);
+  
+}
+ .porcentaje3::after{
+  transform: translateX(-85px);
+  
 }
 .contenedor-contantos {
     border: 2px solid yellow;
