@@ -538,7 +538,10 @@ button {
     grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
 }
-.contenedor-elvis{
+.contenedor-elvis ,
+.contenedor-genesis ,
+.contenedor-wasis ,
+.contenedor-alex{
     padding: 20px 30px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -554,8 +557,6 @@ button {
 .contenedor-elvis::-webkit-scrollbar-thumb{
     background: #78787a67;
     border-radius: 25px;
-    
-
 }
 .contenedor-nombre{
    
