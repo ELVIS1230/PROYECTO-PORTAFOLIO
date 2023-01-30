@@ -551,10 +551,16 @@ button {
     align-items: start;
     color: white;
 }
-.contenedor-elvis::-webkit-scrollbar{
-    width: 10px;
+.contenedor-elvis::-webkit-scrollbar,
+.contenedor-genesis::-webkit-scrollbar,
+.contenedor-wasis::-webkit-scrollbar,
+.contenedor-alex::-webkit-scrollbar{
+width: 10px;
 }
-.contenedor-elvis::-webkit-scrollbar-thumb{
+.contenedor-elvis::-webkit-scrollbar-thumb,
+.contenedor-genesis::-webkit-scrollbar-thumb,
+.contenedor-wasis::-webkit-scrollbar-thumb,
+.contenedor-alex::-webkit-scrollbar-thumb{
     background: #78787a67;
     border-radius: 25px;
 }
