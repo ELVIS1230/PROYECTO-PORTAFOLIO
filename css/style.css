@@ -451,10 +451,11 @@ button {
 }
 .contenido-proyectos .lenguajes-usados span{
     font-family: 'Poppins';
-    font-weight: 300;
+    font-weight: 400;
 }
 .practica:hover .contenido-proyectos{
     opacity: 0;
+    
 }
 .contenedor-proyectos .contenedor-practicas {
     display: grid;
@@ -484,8 +485,8 @@ button {
 }
 .practica:hover{
     border-style:  none;
-    background:white;
-
+    background:rgba(255, 255, 255, 0.514);
+    box-shadow: 0 0 5px #45f3ff;
 }
 .practica:hover .descripcion .bajar{
     opacity: 1;
@@ -497,8 +498,9 @@ button {
     top:  140px;
     left: 115px;
     opacity: 0;
-    background: white;
-    border: 1px solid red;
+    background: rgba(255, 255, 255, 0.808);
+    border: 2px solid red;
+    box-shadow: 0 0 5px #45f3ff, 0 0 10px #45f3ff;
     border-radius: 0;
     font-size: 20px;
     font-family: "Poppins";
