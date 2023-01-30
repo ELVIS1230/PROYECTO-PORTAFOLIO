@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #edf1f4;
+}
+
+.oscuro{
+    background: #282c2f;
+}
+.calculadora{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0,0, 0.2),
+    -15px -15px 20px #fffb;
+    
+}
+.oscuro .calculadora{
+    background: #33393e;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.25),
+    -15px -15px 20px rgba(255, 255, 255, 0.10);
+}
+.calculadora .botones{
+    position: relative;
+    display: grid;
+}
+.calculadora .botones #value{
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 20px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+.oscuro .calculadora .botones #value{
+background: #33393e;
+color: #eee;
+box-shadow:inset 15px 15px 20px rgba(0, 0, 0, 0.5),
+  inset  -15px -15px 20px rgba(255, 255, 255, 0.1);
+}
+
+.calculadora .botones button{
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 20px #fff;
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #666;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px #fff;
+    border-radius: 10px;
+}
+.oscuro .calculadora .botones button{
+    color: #eee;
+    border: 2px solid #333;
+    background: #33393e;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.calculadora .botones button:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+    inset -5px -5px 10px #fff;
+    color: #f44336;
+}
+.oscuro .calculadora .botones button:active{
+    box-shadow: inset  15px 15px 20px rgba(0, 0, 0, 0.25),
+    inset -15px -15px 20px rgba(255, 255, 255, 0.1);
+}
+.calculadora .botones button#borrar{
+    grid-column: span 2;
+        background: #f44336;
+        color: #fff;
+        border: 2px solid #edf1f4;
+}
+.calculadora .botones button#suma{
+    grid-row: span 2;
+    background: #31a935;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.calculadora .botones button#igual{
+    grid-row: span 2;
+    background: #2196f3;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.oscuro .calculadora .botones button#borrar,
+.oscuro .calculadora .botones button#suma,
+.oscuro .calculadora .botones button#igual{
+    border: 2px solid #333;
+}
+.oscuro .calculadora .botones button#borrar:active
+.oscuro .calculadora .botones button#suma:active
+.oscuro .calculadora .botones button#igual:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.calculadora .botones span#borrar:active,
+.calculadora .botones span#suma:active,
+.calculadora .botones span#igual:active{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+     -5px -5px 10px #fff, inset -5px -5px 10px rgba(0, 0, 0, 0.1);
+
+}
+.btnOscuro{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #555;
+    cursor: pointer;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px #fff;
+
+}
+h3{
+    position: fixed;
+    color: #33393e;
+    top: 20px;
+    right: 50px;
+}
+.oscuro h3{
+    
+    color: #edf1f4;
+    
+}
+.oscuro .btnOscuro{
+    background: #edf1f4;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.25);
+}
