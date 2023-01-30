@@ -398,15 +398,12 @@ button {
     overflow-y: scroll;
 }
 #proyectos::-webkit-scrollbar {
-    width: 5px;
+    width: 10px;
 }
-#proyectos::-webkit-scrollbar-track {
-    background: transparent;
-    
-}
+
 #proyectos::-webkit-scrollbar-thumb {
-    background: transparent; 
-    border-radius: 100px;
+    background: #78787a67; 
+    border-radius: 25px;
 }
 /* scrool transparente, scroll horizontal arreglar*/
 .contenedor-proyectos {
@@ -487,6 +484,7 @@ button {
     border-style:  none;
     background:rgba(255, 255, 255, 0.514);
     box-shadow: 0 0 5px #45f3ff;
+    transform: translateY(-10px);
 }
 .practica:hover .descripcion .bajar{
     opacity: 1;
