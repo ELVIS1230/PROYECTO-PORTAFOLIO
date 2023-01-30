@@ -331,3 +331,8 @@ button {
 .educacion hr {
     width: 50%;
 }
+.desarrollo label{
+        padding-right: 10px;
+        font-size: 1rem;
+}
+
