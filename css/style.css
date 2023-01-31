@@ -524,7 +524,7 @@ button {
 .contenedor-genesis ,
 .contenedor-wasis ,
 .contenedor-alex ,
-.contenerdor-erika{
+.contenedor-erika{
     padding: 20px 30px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -538,7 +538,7 @@ button {
 .contenedor-genesis::-webkit-scrollbar,
 .contenedor-wasis::-webkit-scrollbar,
 .contenedor-alex::-webkit-scrollbar,
-.comtenedor-erika::-webkit-scrollbar{
+.contenedor-erika::-webkit-scrollbar{
 width: 10px;
 }
 .contenedor-elvis::-webkit-scrollbar-thumb,
