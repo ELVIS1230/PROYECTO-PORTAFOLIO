@@ -763,6 +763,7 @@ width: 10px;
 .mapa{
     position: relative;
     left: 500px;
+    position: relative;
 }
 .di{
     color: white;
