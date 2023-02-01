@@ -723,9 +723,7 @@ width: 10px;
 .personaje4::after{
     transform: translateX(-85px); 
 }
-.contenedor-contactos{
-    color: white;
-}
+
 
 
 
