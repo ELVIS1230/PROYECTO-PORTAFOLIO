@@ -764,7 +764,7 @@ width: 10px;
     position: relative;
     left: 500px;
     position: relative;
-    bottom: 50px;
+    bottom: 200px;
 
 }
 .di{
@@ -772,7 +772,7 @@ width: 10px;
     font-size: 30px;
     margin: 5px;
 }
-.contenedor-contactos::-webkit-scrollbar{
+.contenedor-contactos::-webkit-overflow-scrollbar{
     background: #78787a67; 
     border-radius: 25px;
 }
