@@ -777,13 +777,18 @@ width: 10px;
     font-size: 30px;
     margin: 5px;
 }
-.contactos::-webkit-scrollbar-thumb{
-    background: #78787a67; 
-    border-radius: 25px;
-}
+    
+
 .contenedor-ayuda{
     position: relative;
     left: 100px;
     bottom: 300px;
 }
+#contactos::-webkit-scrollbar {
+    width: 10px;
+}
 
+#contactos::-webkit-scrollbar-thumb {
+    background: #78787a67; 
+    border-radius: 25px;
+}
