@@ -769,6 +769,10 @@ width: 10px;
     font-size: 30px;
     margin: 5px;
 }
+.contenedor-contactos::-webkit-scrollbar{
+    background: #78787a67; 
+    border-radius: 25px;
+}
 
 
 
