@@ -732,26 +732,26 @@ width: 10px;
     font-size: 20px;
 }
 .dire{
-    border: 1px solid white;
+    border: 1px solid gray;
     width: 500px;
     height: 100px;
     background-color: gray;
 }
 .num{
-    border: 1px solid white;
+    border: 1px solid gray;
     width: 500px;
     height: 100px;
     background-color: gray;
 }
 
 .correo{
-    border: 1px solid white;
+    border: 1px solid gray;
     width: 500px;
     height: 100px;
     background-color: gray;
 }
 .desa{
-    border: 1px solid white;
+    border: 1px solid gray;
     width: 500px;
     height: 100px;
     background-color: gray;
