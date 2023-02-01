@@ -745,6 +745,7 @@ width: 10px;
     height: 100px;
     background-color: gray;
     margin: 5px;
+    border-radius: 10px;
 }
 
 .correo{
@@ -753,6 +754,7 @@ width: 10px;
     height: 100px;
     background-color: gray;
     margin: 5px;
+    border-radius: 10px;
 }
 .desa{
     border: 1px solid gray;
@@ -760,6 +762,7 @@ width: 10px;
     height: 100px;
     background-color: gray;
     margin: 5px;
+    border-radius: 10px;
 }
 .mapa{
     position: relative;
