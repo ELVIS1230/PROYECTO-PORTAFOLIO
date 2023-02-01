@@ -737,6 +737,7 @@ width: 10px;
     height: 100px;
     background-color: gray;
     margin: 5px;
+  border-radius: 10px;
 }
 .num{
     border: 1px solid gray;
