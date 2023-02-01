@@ -781,4 +781,9 @@ width: 10px;
     background: #78787a67; 
     border-radius: 25px;
 }
+.contenedor-ayuda{
+    position: relative;
+    left: 100px;
+    bottom: 300px;
+}
 
