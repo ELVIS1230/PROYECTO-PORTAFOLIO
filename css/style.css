@@ -729,6 +729,7 @@ width: 10px;
     height: 100px;
     position: relative;
     left: 100px;
+    font-size: 20px;
 }
 .dire{
     border: 1px solid white;
