@@ -736,14 +736,14 @@ width: 10px;
     width: 500px;
     height: 100px;
     background-color: gray;
-    margin: 2px;
+    margin: 5px;
 }
 .num{
     border: 1px solid gray;
     width: 500px;
     height: 100px;
     background-color: gray;
-    margin: 2px;
+    margin: 5px;
 }
 
 .correo{
@@ -751,14 +751,14 @@ width: 10px;
     width: 500px;
     height: 100px;
     background-color: gray;
-    margin: 2px;
+    margin: 5px;
 }
 .desa{
     border: 1px solid gray;
     width: 500px;
     height: 100px;
     background-color: gray;
-    margin: 2px;
+    margin: 5px;
 }
 .mapa{
     position: relative;
@@ -767,7 +767,7 @@ width: 10px;
 .di{
     color: white;
     font-size: 30px;
-    margin: 2px;
+    margin: 5px;
 }
 
 
