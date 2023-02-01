@@ -723,10 +723,8 @@ width: 10px;
 .personaje4::after{
     transform: translateX(-85px); 
 }
-.contenedor-contantos {
-    border: 2px solid yellow;
-    grid-column-start:1 ;
-    grid-row-start:3 ;
+.contenedor-contactos{
+    color: white;
 }
 
 
