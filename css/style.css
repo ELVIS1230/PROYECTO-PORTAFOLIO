@@ -725,7 +725,6 @@ width: 10px;
 }
 .contenedor-contactos{
     text-align: center;
-    border: 1px solid white;
     width: 500px;
     height: 100px;
     position: relative;
@@ -733,15 +732,23 @@ width: 10px;
 }
 .dire{
     border: 1px solid white;
+    width: 500px;
+    height: 100px;
 }
 .num{
     border: 1px solid white;
+    width: 500px;
+    height: 100px;
 }
 .correo{
     border: 1px solid white;
+    width: 500px;
+    height: 100px;
 }
 .desa{
     border: 1px solid white;
+    width: 500px;
+    height: 100px;
 }
 
 
