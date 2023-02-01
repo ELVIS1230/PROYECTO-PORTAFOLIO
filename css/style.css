@@ -741,16 +741,20 @@ width: 10px;
     border: 1px solid white;
     width: 500px;
     height: 100px;
+    background-color: gray;
 }
+
 .correo{
     border: 1px solid white;
     width: 500px;
     height: 100px;
+    background-color: gray;
 }
 .desa{
     border: 1px solid white;
     width: 500px;
     height: 100px;
+    background-color: gray;
 }
 .mapa{
     position: relative;
