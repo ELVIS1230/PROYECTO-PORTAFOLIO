@@ -723,7 +723,14 @@ width: 10px;
 .personaje4::after{
     transform: translateX(-85px); 
 }
-
+.contenedor-contactos{
+    text-align: center;
+    border: 1px solid white;
+    width: 500px;
+    height: 100px;
+    position: relative;
+    left: 280px;
+}
 
 
 
