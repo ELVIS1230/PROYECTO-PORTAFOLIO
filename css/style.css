@@ -756,15 +756,6 @@ width: 10px;
 
     font-size: 25px;
 }
-/*
-.mapa{
-    position: relative;
-    left: 500px;
-    position: relative;
-    bottom: 420px;
- 
-
-}*/
 .di{
     color: white;
     font-size: 30px;
@@ -773,7 +764,7 @@ width: 10px;
     
 
 .contenedor-ayuda{
-    border: solid 2px blue;
+    border: solid 2px rgb(189, 55, 133);
     grid-row: span 2;
 }
 .contenedor-informacion{
@@ -789,4 +780,11 @@ width: 10px;
     text-align: left;
     margin: 10px 0 0 15px;
     
+}
+.mapa{
+    margin: auto;
+}
+#usuario{
+    position: relative;
+    left: 110px;
 }
