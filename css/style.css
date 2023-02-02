@@ -786,17 +786,24 @@ width: 10px;
 }
 #Usuario{
     position: relative;
-    left: 100px;
-    bottom: 10px;
+    left: 10px;
+    height: 25px;
+    width: 300px;
 }
 #email{
     position: relative;
-    left: 100px;
+    left: 10px;
+    height: 25px;
+    width: 300px;
 }#asunto{
     position: relative;
-    left: 50px;
+    left: 10px;
+    height: 25px;
+    width: 300px;
 }
 #mensaje{
     position: relative;
-    left: 60px;
+    left: 10px;
+    height: 25px;
+    width: 300px;
 }
