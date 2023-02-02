@@ -804,6 +804,19 @@ width: 10px;
 #mensaje{
     position: relative;
     left: 10px;
-    height: 25px;
+    height: 55px;
     width: 300px;
+}
+button{
+    position: relative;
+       left: 25px;
+       border-radius: 10px;
+       border: 1px solid rgb(177, 54, 54);
+       font-style: bold;
+       font-size: 1em;
+       cursor: pointer;
+       background-color: red;
+}
+.ayu{
+    background: white;
 }
