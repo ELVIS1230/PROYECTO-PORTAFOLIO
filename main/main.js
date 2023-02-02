@@ -30,5 +30,8 @@ targets.forEach(target => {
         console.log("elvisajoso")
       
     })
+    function imprimir(){
+        alert("Registro guardado con exito")
+    }
 }); 
 

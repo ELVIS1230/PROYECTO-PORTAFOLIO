@@ -784,7 +784,39 @@ width: 10px;
 .mapa{
     margin: auto;
 }
-#usuario{
+#Usuario{
     position: relative;
-    left: 110px;
+    left: 10px;
+    height: 25px;
+    width: 300px;
+}
+#email{
+    position: relative;
+    left: 10px;
+    height: 25px;
+    width: 300px;
+}#asunto{
+    position: relative;
+    left: 10px;
+    height: 25px;
+    width: 300px;
+}
+#mensaje{
+    position: relative;
+    left: 10px;
+    height: 55px;
+    width: 300px;
+}
+button{
+    position: relative;
+       left: 25px;
+       border-radius: 10px;
+       border: 1px solid rgb(250, 188, 107);
+       font-style: bold;
+       font-size: 1em;
+       cursor: pointer;
+       background-color: rgb(250, 188, 107);
+}
+.ayu{
+  color: rgb(250, 188, 107);
 }
