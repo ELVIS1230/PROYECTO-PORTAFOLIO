@@ -811,12 +811,12 @@ button{
     position: relative;
        left: 25px;
        border-radius: 10px;
-       border: 1px solid rgb(177, 54, 54);
+       border: 1px solid rgb(250, 188, 107);
        font-style: bold;
        font-size: 1em;
        cursor: pointer;
-       background-color: red;
+       background-color: rgb(250, 188, 107);
 }
 .ayu{
-    background: white;
+  color: rgb(250, 188, 107);
 }
