@@ -783,40 +783,48 @@ width: 10px;
 }
 .mapa{
     margin: auto;
+    border: solid 5px gray;
+    border-radius: 10px;
 }
 #Usuario{
     position: relative;
     left: 10px;
-    height: 25px;
+    height: 35px;
     width: 300px;
+    background-color: #c2bebe;
 }
 #email{
     position: relative;
     left: 10px;
-    height: 25px;
+    height: 35px;
     width: 300px;
+    background-color: #c2bebe;
 }#asunto{
     position: relative;
     left: 10px;
-    height: 25px;
+    height: 35px;
     width: 300px;
+    background-color: #c2bebe;
 }
 #mensaje{
     position: relative;
     left: 10px;
-    height: 55px;
+    height: 90px;
     width: 300px;
+    background-color: #c2bebe;
 }
-button{
+.claa{
     position: relative;
-       left: 25px;
+       left: 20px;
        border-radius: 10px;
-       border: 1px solid rgb(250, 188, 107);
+       border: 1px solid rgb(17, 17, 17);
        font-style: bold;
        font-size: 1em;
        cursor: pointer;
        background-color: rgb(250, 188, 107);
+       width: 200px;
 }
 .ayu{
   color: rgb(250, 188, 107);
+  margin: 40px;
 }
