@@ -784,7 +784,19 @@ width: 10px;
 .mapa{
     margin: auto;
 }
-#usuario{
+#Usuario{
     position: relative;
-    left: 110px;
+    left: 100px;
+    bottom: 10px;
+}
+#email{
+    position: relative;
+    left: 100px;
+}#asunto{
+    position: relative;
+    left: 50px;
+}
+#mensaje{
+    position: relative;
+    left: 60px;
 }
