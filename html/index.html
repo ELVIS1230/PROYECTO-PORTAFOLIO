@@ -712,31 +712,34 @@
                         <div class="contenedor-contactos">
                             <h1 class="name-page">CONTACTANOS</h1>
                             <div class="contenedor-informacion">
-                                <div class="info"><i class="fa-solid fa-location-dot "></i><span>Quito-Gárcia Moreno</span></div>
-                                <div class="info"><i class="fa-solid fa-phone "></i><span>+593 0969041202</span></div>
-                                <div class="info"><i class="fa-solid fa-envelope "></i><span>contact@desarrolladores.com</span></div>
-                                <div class="info"><i class="fa-solid fa-square-check "></i></i><span>Desarolladores Disponibles</span> </div>
-                                <p class="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d997.4506137737776!2d-78.4845747!3d-0.1615789!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1675189749435!5m2!1ses!2sec" width="240" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-                            </div>
-                            <div class="contenedor-ayuda">
+                                <div class="info">
+                                    <span class="material-symbols-outlined , icon">location_on</span>
+                                    <span>Quito - Gárcia Moreno</span></div>
+                                <div class="info">
+                                    <span class="material-symbols-outlined , icon">call</span>
+                                    <span>+593 0969041202</span></div>
+                                <div class="info">
+                                    <span class="material-symbols-outlined , icon">mail </span>
+                                    <span>contact@desarrolladores.com</span></div>
+                                <div class="info">
+                                    <span class="material-symbols-outlined , icon">check_circle</span>
+                                    <span>Desarolladores Disponibles</span> </div>
+                                </div>
+                                <div class="contenedor-ayuda">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d997.4506137737776!2d-78.4845747!3d-0.1615789!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1675189749435!5m2!1ses!2sec" width="240" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 <form>
-                                <h1 class="ayu">¿Cómo puedo ayudarte?</h1>
-                                <br>
-                                 <input type="text" required="required" id="Usuario" placeholder=" Nombre Completo">
-                                 <br>
-                                 <br>
-                                 <input type="email" required="required" id="email" placeholder=" Correo electrónico">
-                                 <br>
-                                 <br>
-                                 <input type="text" required="required" id="asunto" placeholder=" Asunto">
-                                 <br>
-                                 <br> 
-                                 <textarea name="Descripcion" id="mensaje" cols="30" rows="10" placeholder=" Mensaje"></textarea>
-                                 <br>
-                                 <br>
-                                 <br>
-                                 <button  class="claa" onclick="imprimir()" type="submit">Enviar Mensaje</button>
-                         
+                                <h3 class="ayu">¿Cómo podemos ayudarte?</h3>
+                               <div class="contenedor-mensaje"> 
+                                 <input type="text" required="required" class="style-mensaje" id="usuario" placeholder=" Nombre Completo">
+                                 
+                                 <input type="email" required="required" class="style-mensaje" id="email" placeholder=" Correo electrónico">
+                                 
+                                 <input type="text" required="required" class="style-mensaje" id="asunto" placeholder=" Asunto">
+                                  
+                                 <textarea name="Descripcion" id="mensaje" class="style-mensaje" cols="30" rows="10" placeholder=" Mensaje"></textarea>
+                                 
+                                </div>
+                                <button  class="claa" onclick="imprimir()" type="submit">Enviar Mensaje</button>
                             </form>
                             </div>
                         </div>
