@@ -724,7 +724,7 @@ width: 10px;
     transform: translateX(-85px); 
 }
 .contenedor-contactos{
-    border: 2px solid red;
+    
     text-align: center;
     width: 100%;
     height: 100%;
@@ -737,24 +737,47 @@ width: 10px;
     padding: 20px;
     column-gap:20px ;
 }
+.contenedor-contactos::-webkit-scrollbar{
+    width: 10px;
+}
+.contenedor-contactos::-webkit-scrollbar-thumb {
+    background: #78787a67; 
+    border-radius: 25px;
+}
 
 .info{
-    
-    border: 1px solid gray;
-    width: 250px;
+    width: 220px;
     height: 100px;
-    background-color: gray;
+    background-color: #1c1c1c;
+    border:1px solid #45f3ff;
     margin: 12px;
-    border-radius: 10px;
     overflow: hidden;
     font-size: 15px;
     display: grid;
-    grid-template-rows: repeat(2,1fr);
-    padding: 10px;
+    grid-template-rows: 55px 30px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+    
 }
-.info i{
+.info:hover{
+    transform: translateX(15px);
+    background: #303030;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px #45f3ff;
+}
 
-    font-size: 25px;
+.info span{
+  /* border: blue solid 2px;*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 15px;
+   color: white;
+}
+.info .icon{
+    font-size: 38px;
+    font-weight: 300;
+    color:  rgb(255, 0, 0) ;
 }
 .di{
     color: white;
@@ -762,18 +785,44 @@ width: 10px;
     margin: 5px;
 }
     
-
-.contenedor-ayuda{
-    border: solid 2px rgb(189, 55, 133);
-    grid-row: span 2;
-}
 .contenedor-informacion{
-    border: solid 2px peru;
+    /*border: solid 2px peru;*/
     grid-column-start:1 ;
     display: grid;
     justify-items: center;
     grid-template-rows: repeat(4, 1fr);
+    padding-top: 15px;
+    
 }
+
+.contenedor-ayuda{
+    grid-row: span 2;
+    display: grid;
+    /*border: solid 2px rgb(189, 55, 133);*/
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 25px ;
+    row-gap: 15px;
+    
+}
+.contenedor-ayuda iframe{
+    height: 250px;
+    width: 450px;
+}
+.contenedor-ayuda form{
+    position: relative;
+/*border: 2px solid seagreen;*/
+height: 285px;
+}
+.contenedor-mensaje{
+/*border: 2px solid yellow;    */
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 40px);
+height: 220px;
+row-gap: 20px;
+column-gap: 15px ;
+}
+
 
 .name-page{
     color: white;
@@ -786,45 +835,71 @@ width: 10px;
     border: solid 5px gray;
     border-radius: 10px;
 }
-#Usuario{
-    position: relative;
-    left: 10px;
-    height: 35px;
-    width: 300px;
-    background-color: #c2bebe;
+
+.style-mensaje{
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+    border: white 2px solid;
+    border-radius: 5px  ;
+    height: 50px;
+    padding: 5px;
+    font-size: 18px;
 }
+#usuario{
+    grid-column-start: 1 ;
+
+    background: transparent;
+    color: white;
+}
+
 #email{
-    position: relative;
-    left: 10px;
-    height: 35px;
-    width: 300px;
-    background-color: #c2bebe;
-}#asunto{
-    position: relative;
-    left: 10px;
-    height: 35px;
-    width: 300px;
-    background-color: #c2bebe;
+    grid-column-start:1 ;
+    grid-row-start: 2 ;
+    
+    
+}
+#asunto{
+    grid-column-start:1 ;
+   grid-row-start:3 ;
+    
+    
 }
 #mensaje{
-    position: relative;
-    left: 10px;
-    height: 90px;
-    width: 300px;
-    background-color: #c2bebe;
+    grid-column-start: 2 ;
+    grid-row-start: 1 ;
+    grid-row: span 3;
+    height: 170px;
+    width: 200px;
+    
+}
+#mensaje:focus,
+#usuario:focus,
+#email:focus,
+#asunto:focus{
+    border: 2px solid red;
+    /*border: 2px solid rgb(106, 211, 20);*/
 }
 .claa{
-    position: relative;
-       left: 20px;
+        position: absolute;
        border-radius: 10px;
-       border: 1px solid rgb(17, 17, 17);
-       font-style: bold;
+       background: transparent;
+       color: white;
        font-size: 1em;
+       letter-spacing: 0.05em;
        cursor: pointer;
-       background-color: rgb(250, 188, 107);
+       border: 3px solid #45f3ff81;
        width: 200px;
+       bottom: 5px;
+       left: 150px;
+       transition: all 0.3s ease-in-out;
+}
+.claa:hover{
+    border: rgb(209, 3, 3) 3px solid;
 }
 .ayu{
-  color: rgb(250, 188, 107);
-  margin: 40px;
+  color: #45f3ff;
+  margin: 5px 0px 15px ;
+  text-align: left;
+
 }
