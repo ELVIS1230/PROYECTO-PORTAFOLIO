@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="main.js" defer></script>
+    <title>Agenda</title>
+</head>
+
+<body>
+
+    <dialog class="container" id="ventana-emergente">
+        <h2>Registrar Actividad</h2>
+        <!-- formulario -->
+        <div class="formulario-d">
+            <form id="form">
+                <p>Titulo de Evento</p>
+                <input type="text" class="titulo-de-evento" placeholder="Titulo de Evento">
+                <p>Fecha de Inicio</p>
+                <div class="contenedor-fecha-incio">
+                    <input type="date" class="fecha-inicio" placeholder="Fecha de Inicio">
+                </div>
+                <p>Fecha Fin
+                <p>
+                <div class="contenedor-fecha-fin">
+                    <input type="date" class="fecha-fin" placeholder="Fecha de Fin">
+                </div>
+                <p>Prioridad de Tarea</p>
+                <select name="prioridad" id="prioridad">
+                    <option value="Normal">Normal</option>
+                    <option value="Baja">Baja</option>
+                    <option value="Alta">Alta</option>
+                </select>
+                <p>Estado de Tarea</p>
+                <select name="estado" id="estado">
+                    <option value="Pendiente">Pendiente</option>
+                    <option value="En proceso">En curso</option>
+                    <option value="Finalizado">Finalizado</option>
+                </select>
+                <p>Descripción de Evento (opcional)</p>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+
+            </form>
+        </div>
+        <div class="botones">
+            <button id="btn-agregar-tarea" class="boton">Agregar Tarea</button>
+            <button id="cerrar-formulario" class="boton">CANCELAR</button>
+        </div>
+    </dialog>
+
+    <div class="contenedor-general">
+        <div class="titulo">
+            <h1>AGENDA TAREAS</h1>
+        </div>
+        <div class="lista-pendientes">
+            <h1> LISTA DE TAREAS PENDIENTES</h1>
+        </div>
+        <div class="contenedor-icono">
+        <div class="agregar-evento">
+            <h4>Agregar <br> Evento</h4>
+            <span class="material-symbols-outlined" id="mostrar-formulario">
+                library_add
+            </span>
+        </div>
+        </div>
+        <div class="contenedor-tabla">
+        <table class="tabla" id="tblDatos">
+            <tr>
+                <th>TAREA</th>
+                <th>PRIORIDAD</th>
+                <th>ESTADO</th>
+                <th>FECHA DE INICIO</th>
+                <th>FECHA DE VENCIMIENTO</th>
+                <th class="celda6">DESCRIPCIÓN</th>
+            </tr>
+            <tr >
+                <td class="borde1"> TAREA 1 </td>
+                <td class="borde1"> NORMAL </td>
+                <td class="borde1"> NO INICIADA </td>
+                <td class="borde1"> FECHA </td>
+                <td class="borde1"> FECHA </td>
+                <td class="borde4"></td>
+            </tr>
+            <tr>
+                <td class="borde2"> TAREA 2 </td>
+                <td class="borde2"> ALTA </td>
+                <td class="borde2"> COMPLETADA </td>
+                <td class="borde2"> FECHA </td>
+                <td class="borde2"> FECHA </td>
+                <td class="borde4"></td>
+            </tr>
+            <tr>
+                <td class="borde2">TAREA 3 </td>
+                <td class="borde2"> BAJA </td>
+                <td class="borde2"> EN CURSO </td>
+                <td class="borde2"> FECHA </td>
+                <td class="borde2"> FECHA </td>
+                <td class="borde4"></td>
+            </tr>
+            <tr>
+                <td class="borde3">TAREA 4 </td>
+                <td class="borde3"> NORMAL </td>
+                <td class="borde3"> NO INICIADO </td>
+                <td class="borde3"> FECHA </td>
+                <td class="borde3"> FECHA </td>
+                <td class="borde4"></td>
+            </tr>
+
+        </table>
+    </div>
+    </div>
+
+
+    
+
+</body>
+
+</html>
