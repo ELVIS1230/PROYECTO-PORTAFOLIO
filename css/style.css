@@ -213,6 +213,9 @@ body{
 .carta1{
     border-top-left-radius: 10px;
 }
+.carta1 img{
+object-fit: cover;
+}
 .carta5{
     border-top-right-radius: 10px;
 }
