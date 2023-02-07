@@ -7,7 +7,11 @@ const form = document.querySelector("form");
 const labelFrases = document.getElementById("contenedor-frases")
 let frases = [' "No se trata de donde vienes, si no a donde vas." </br></br> Ella Fitzgerald. ',
             ' "Los sabios son los que buscan la sabiduría; los necios piensan ya haberla encontrado."</br></br> Napoleón Bonaparte. ',
-             ' "Aprender sin reflexionar es una ocupación inútil."</br></br> Confucio ']
+             ' "Aprender sin reflexionar es una ocupación inútil."</br></br> Confucio ',
+            ' "El único modo de hacer un gran trabajo es amar lo que haces." </br></br> Steve Jobs',
+            ' " Un sueño no se hace realidad por arte de magia, necesita sudor, determinación y trabajo duro." </br></br> Colin Powell',
+            ' "La lógica te llevará de la a a la z. la imaginación te llevará a cualquier lugar. " </br></br> Albert Einstein',
+            ' "Solo aquellos que se arriesgan a ir demasiado lejos pueden descubrir lo lejos que pueden llegar."</br></br> T.S. Eliot']
 const fraseAleatoria = frases[Math.floor(Math.random() * frases.length)];
 
 labelFrases.innerHTML=fraseAleatoria
