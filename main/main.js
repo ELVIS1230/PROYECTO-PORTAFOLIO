@@ -2,6 +2,8 @@ const targets = document.querySelectorAll("[data-target]");
 const content = document.querySelectorAll("[data-content]");
 const ventana= document.getElementById("ventana");
 const btnCerrarModal = document.getElementById("cerrar-modal");
+const form = document.querySelector("form");
+
 const labelFrases = document.getElementById("contenedor-frases")
 let frases = [' "No se trata de donde vienes, si no a donde vas." </br></br> Ella Fitzgerald. ',
             ' "Los sabios son los que buscan la sabiduría; los necios piensan ya haberla encontrado."</br></br> Napoleón Bonaparte. ',
@@ -30,8 +32,23 @@ targets.forEach(target => {
         console.log("elvisajoso")
       
     })
-    function imprimir(){
-        alert("Registro guardado con exito")
-    }
 }); 
+form.addEventListener("submit", e => {
+    e.preventDefault()
+    
+})
+
+
+function ValidarCorreo(email){
+
+    var expRegular = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    var esValido= expRegular.test(email);
+    
+    if(esValido == true){
+        console.log("Correo Valido")
+        alert("Registro guardado con exito")
+    } else {
+        console.log("No Valido")
+    }
+}
 
