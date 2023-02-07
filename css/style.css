@@ -858,12 +858,12 @@ column-gap: 15px ;
     grid-column-start:1 ;
     grid-row-start: 2 ;
     
-    
+    color: white;
 }
 #asunto{
     grid-column-start:1 ;
    grid-row-start:3 ;
-    
+   color: white;
     
 }
 #mensaje{
@@ -872,7 +872,7 @@ column-gap: 15px ;
     grid-row: span 3;
     height: 170px;
     width: 200px;
-    
+    color: white;
 }
 #mensaje:focus,
 #usuario:focus,
