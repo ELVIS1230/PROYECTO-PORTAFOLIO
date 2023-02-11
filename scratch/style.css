@@ -1,9 +1,15 @@
-
-body{
-    background-color: #1c1c1c;
+html {
+    height: 80%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/13-video-games-pattern-gaming-console-computer-play-mister-tee.jpg");
+    background-size: 100%;
     width: 100%;
     height: 100%;
 }
+
 .container {
     margin-top: 100px;
     background-color: rgb(85, 85, 85, .1);
@@ -13,24 +19,34 @@ body{
     margin: auto;
     align-items: center;
 }
-.container p{
+
+.container p {
     font-size: 80px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     text-align: center;
-    padding: 0;
+    padding: 6px;
+    margin-top: 5px;
     color: white;
+    border: 6px ;
+    border-color: rgba(204, 2, 46, 0.445);
+    border-style: dashed;
+    border-radius: 50px;
+    width: 60%;
+    background-color: rgb(16, 16, 17);
+    margin: auto;
 
 }
-.scratch {   
+
+.scratch {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     width: 80%;
     align-items: center;
     align-content: center;
-    border-radius:8px ;
-    border: 2px solid rgba(240, 8, 8, 0.4);
+    border-radius: 20px;
+    background-color: rgba(185, 180, 181, 0.2);
     box-shadow: 2px saddlebrown;
 }
 
@@ -39,9 +55,11 @@ body{
     text-align: center;
 
 }
-.scratch p{
+
+.scratch p {
     text-align: center;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 30px;
+    font-style: italic;
 }
